@@ -187,5 +187,42 @@ hr {
     margin-left: 0;
 }
 
+/* Colomne de droite */
 
+.right-column {
+    flex-direction: column;
+    width: 70%;
+    padding: 20px 40px;
+    background-color: #fff;
+}
+
+.right-column p {
+    text-indent: 2em;
+    text-align: justify;
+    font-weight: 500;
+}
+
+/* Expériences, Stages, Formations */
+
+.degree {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.degree span {
+    color: #17abb3;
+}
+.place {
+    font-size: small;
+    font-style: italic;
+}
+
+.experience, .stage, .formation {
+    padding: 15px;
+}
+.experience:hover, .stage:hover, .formation:hover {
+    background-color: #e3e3e3;
+    border-left: 5px solid #17abb3;
+}
 
