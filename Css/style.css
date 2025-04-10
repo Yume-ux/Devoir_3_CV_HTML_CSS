@@ -220,5 +220,38 @@ hr {
 .experience:hover, .stage:hover, .formation:hover {
     background-color: #e3e3e3;
     border-left: 5px solid #17abb3;
+}
 
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #17abb3;
+    height: 100px;
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media img {
+    object-fit: cover;
+    filter: invert(1);
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.social-media img:hover {
+    opacity: 0.7;
+}
+
+.update {
+    font-size: small;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
