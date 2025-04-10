@@ -3,9 +3,6 @@
     src: url(../Css/fonts/Raleway-Regular.ttf);
 }
 
-
-/* Header */
-
 h1,
 h2,
 h3,
@@ -17,12 +14,14 @@ h6 {
     margin: auto;
 }
 
+
 h1,h2 {
     font-size: 2.5em;
     color: #fff;
     margin-bottom: 0;
     margin-top: 0;
 }
+
 h2 {
     font-size: 1em;
 }
@@ -111,4 +110,115 @@ header {
 
 .profil-picture img:hover{
     cursor: zoom-in;
+
+}
+
+
+/* Main */
+
+main {
+    display: flex;
+}
+
+h3 {
+    color: #17abb3;
+    margin-top: 40px;
+}
+
+hr {
+    border: 1px ridge #00000015;
+    margin: 15px 0px;
+}
+
+.left-column {
+    flex-direction: column;
+    width: 30%;
+    padding: 20px 40px;
+    background-color: #e3e3e3;
+}
+
+
+
+/* Compétences, Languages*/
+
+.skill, .language {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-weight: bold;
+}
+  
+.skill span {
+    display: inline-block;
+}
+
+.language span {
+    font-weight: 500;
+}
+  
+.stars {
+    color: #17abb3;
+    font-size: large;
+    text-align: right;
+}
+
+/* Qualités et centres d'intérêt*/
+
+.quality ul, .interest ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quality ul li, .interest ul li {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.quality ul li::before, .interest ul li::before {
+    content: "■";
+    color: #17abb3;
+    margin: 10px;
+    margin-left: 0;
+}
+
+/* Colomne de droite */
+
+.right-column {
+    flex-direction: column;
+    width: 70%;
+    padding: 20px 40px;
+    background-color: #fff;
+}
+
+.right-column p {
+    text-indent: 2em;
+    text-align: justify;
+    font-weight: 500;
+}
+
+/* Expériences, Stages, Formations */
+
+.degree {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.degree span {
+    color: #17abb3;
+}
+.place {
+    font-size: small;
+    font-style: italic;
+}
+
+
+
+.experience, .stage, .formation {
+    padding: 15px;
+}
+.experience:hover, .stage:hover, .formation:hover {
+    background-color: #e3e3e3;
+    border-left: 5px solid #17abb3;
+
 }
